@@ -118,8 +118,9 @@
 	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 	<script>
+		import md5 from 'md5';
 		var gitment = new Gitment({
-			id: window.location.pathname,
+			id: md5(title),
 			owner: 'zww0019',
 			repo: 'zww0019.github.io',
 			oauth: {
