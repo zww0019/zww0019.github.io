@@ -111,6 +111,27 @@
   </div>
 </article>
 
+  
+	<section id="comment" class="comment">
+		<div id="gitment"></div>
+	</section>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+			owner: 'zww0019',
+			repo: 'https://github.com/zww0019/blog-comments',
+			oauth: {
+				client_id: '9d48acc7e65d735d2286',
+				client_secret: '7f6ffde70a22a4fe75c4bb717a85fdff6d5a3a2e',
+			},
+		})
+		gitment.render('gitment')
+	</script>
+
+
+
+
 
     </main>
 
